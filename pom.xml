@@ -18,6 +18,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+
     <build>
         <plugins>
             <plugin>
@@ -40,5 +41,13 @@
             </plugin>
         </plugins>
     </build>
-
+    <dependencies>
+        <!-- JUnit 5 for unit testing -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
