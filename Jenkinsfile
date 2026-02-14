@@ -33,6 +33,9 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('Email notification'){
+            mail bcc: '', body: 'Notify me when pipeline fails or pass', cc: '', from: '', replyTo: '', subject: 'Jenkins pipeline', to: 'shuaws1979@gmail.com'
+        }
     }
 
     post {
