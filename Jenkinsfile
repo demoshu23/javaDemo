@@ -35,7 +35,13 @@ pipeline {
         }
         stage('Email notification'){
             steps{
-                mail bcc: '', body: 'Notify me when pipeline fails or pass', cc: '', from: '', replyTo: '', subject: 'Jenkins pipeline', to: 'shuaws1979@gmail.com'
+                mail bcc: '', 
+                body: 'Notify me when pipeline fails or pass', 
+                cc: '', 
+                from: '', 
+                replyTo: '', 
+                subject: 'Jenkins pipeline Jobs', 
+                to: 'shuaws1979@gmail.com'
 
             }
             
